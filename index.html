@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>daļiņu sistēma</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        canvas {
+            display: block;
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div id="controls">
+        <select id="options" multiple size="4">
+            <option value="0">Parasts</option>
+            <option value="1">Ieliekts</option>
+            <option value="2">zobs</option>
+            <option value="3">kvadrāts</option>
+        </select>
+        <button id="show">Rāda</button>
+    </div>
+    <div id="adder">
+        <h4> Var veidot savu daudzstūri spiežot uz ekrāna, vajag vismaz 3  punktus </h4>
+    </div>
+
+</body>
+<script src="dist/main.js"></script>
+<style>
+    div {
+        position: absolute;
+        z-index: 10;
+        color:white;
+    }
+    #controls {
+        top: 50px;
+        left: 10px;
+    }
+    #adder {
+        top: 10px;
+        left: 1000px;
+    }
+</style>
+</html>
